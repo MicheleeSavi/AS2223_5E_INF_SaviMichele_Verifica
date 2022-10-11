@@ -74,3 +74,10 @@ SET Altezza = Altezza + 1;
 
 ALTER TABLE Statistica
 DROP Peso;
+
+UPDATE Statistica
+SET Nazionalita = 'ITA';
+
+UPDATE Statistica
+SET AnnoNascita = AnnoNascita + 2;
+WHERE AnnoNascita < 1980;
