@@ -81,3 +81,9 @@ SET Nazionalita = 'ITA';
 UPDATE Statistica
 SET AnnoNascita = AnnoNascita + 2;
 WHERE AnnoNascita < 1980;
+
+ALTER TABLE Statistica
+ADD Peso int;
+
+UPDATE Statistica
+SET Peso = Altezza / 10 * 5
